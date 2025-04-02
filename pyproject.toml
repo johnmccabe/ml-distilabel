@@ -1,0 +1,13 @@
+[project]
+name = "ml-distilabel"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.13.3",
+    "distilabel[ollama]>=1.5.3",
+    "ipykernel>=6.29.5",
+    "ipywidgets>=8.1.5",
+    "pandas>=2.2.3",
+    "pillow>=11.1.0",
+    "python-dotenv>=1.1.0",
+]

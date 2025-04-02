@@ -1,0 +1,22 @@
+{
+    "build": { 
+		"context": "..",
+		"dockerfile": "Dockerfile" 
+	},
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {"terminal.integrated.shell.linux": "/bin/bash"},
+			"extensions": [
+				"ms-toolsai.jupyter"
+			]
+		}
+	},
+	"runArgs": [
+			"--gpus",
+			"all"
+	],
+	"mounts": [
+		"source=${localEnv:HOME}/caches/huggingface,target=/vscode/.cache/huggingface,type=bind,consistency=cached"
+	]
+}
