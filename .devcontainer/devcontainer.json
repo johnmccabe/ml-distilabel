@@ -12,10 +12,10 @@
 			]
 		}
 	},
-	"runArgs": [
-			"--gpus",
-			"all"
-	],
+	// "runArgs": [
+	// 		"--gpus",
+	// 		"all"
+	// ],
 	"mounts": [
 		"source=${localEnv:HOME}/caches/huggingface,target=/vscode/.cache/huggingface,type=bind,consistency=cached"
 	]
